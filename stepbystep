@@ -1,0 +1,102 @@
+STEP 1: Set Up Your Project
+1.	Open Adobe Animate.
+2.	Click "Create New" > HTML5 Canvas.
+3.	Set:
+•	Stage size: 1280 x 720
+•	Frame rate: 24 fps
+•	Background color: white or light gray
+4.	Click "Create".
+STEP 2: Draw the Table and Pyramid
+2A. Draw the Table
+1.	Select the Rectangle Tool (Shortcut: R).
+•	Found in the Tools panel (left side).
+2.	Click and drag to draw a flat rectangle near the bottom of the stage (this is your "table").
+3.	Optional: Use the Fill color in the Properties Panel (right side) to change its color.
+2B. Draw the Pyramid (manually)
+We'll build the Pyramid from triangles and a square.
+Step 1: Draw One Triangle (Pyramid Face)
+1.	In the Tools panel, click and hold the Rectangle Tool.
+2.	Select Polygon Tool from the dropdown.
+3.	In the Properties panel (right side), under Polygon Settings:
+•	Set sides = 3 to make a triangle.
+4.	Click and drag on stage to draw the triangle.
+•	Rotate if needed using the Free Transform Tool (Q) – icon: 
+Step 2: Make 3 More Triangle Faces
+1.	Select the triangle (click once).
+2.	Press Ctrl + D (Duplicate).
+3.	Use the Free Transform Tool to rotate and position the other three triangles to make a 3D-ish pyramid.
+Step 3: Add the Square Base
+1.	Select the Rectangle Tool.
+2.	Draw a square beneath the triangles to form the base.
+3.	Use the Align panel (Window > Align) to center and line up the shapes.
+Step 4: Group the Whole Pyramid
+1.	Use the Selection Tool (V) to select all the shapes.
+2.	Right-click > Convert to Symbol.
+•	Name: Pyramid
+•	Type: Movie Clip
+3.	Now, the whole Pyramid is one object.
+STEP 3: Animate the Floating, Tilting, and Spinning
+3A. Create a New Layer for the Pyramid
+1.	Make sure your Pyramid is on its layer.
+2.	Rename it Pyramid.
+3B. Convert to Motion Tween
+1.	Right-click on frame 1 of the Pyramid layer → Create Motion Tween.
+2.	Drag the timeline to frame 60 → right-click → Insert Keyframe.
+Floating Up:
+•	In frame 1: Pyramid on the table.
+•	At frame 24, Move the Pyramid up slightly using the Selection Tool (grab and drag).
+•	This simulates floating.
+Tilting:
+•	At frame 36: Use Free Transform Tool (Q) to slightly tilt (rotate Z axis).
+•	You may rotate it about 10 degrees.
+Spinning:
+•	At frame 60: Rotate the Pyramid to +100° on the Y axis.
+•	Using Classic Tween or frame-by-frame, use Free Transform to rotate it visually.
+STEP 4: Animate Base Expansion & Camera Zoom
+4A. Separate Base from Pyramid (optional)
+1.	If you want to animate only the base:
+•	Double-click the Pyramid to enter Edit Symbol mode.
+•	Select the base only.
+•	Cut it (Ctrl + X), edit the exit symbol, and paste it on a new layer (Ctrl + Shift + V).
+4B. Animate Base Growth
+1.	Select the Base layer.
+2.	Insert Keyframes at frame 60 and frame 75.
+3.	At frame 75, use the Free Transform Tool to scale the base slightly.
+4C. Add the Camera Zoom
+1.	Click the Camera Icon above the timeline (top-left of layers).
+2.	This adds a camera layer.
+Zoom In:
+•	At frame 60, Add a keyframe to the Camera layer.
+•	At frame 90: Use the Camera Tool (Shift + T or click the camera icon) to zoom in and pan toward the base.
+STEP 5: Show Base Measurements and Area
+5A. Show “12 inches x 12 inches”
+1.	Add a new Text Layer.
+2.	At frame 95, use the Text Tool (T) to type:
+3.	12 inches x 12 inches
+4.	Position above or near the base.
+5.	Right-click > Create Classic Tween if you want it to fade in.
+•	In Properties > Color Effect > Alpha, animate from 0% to 100%.
+5B. Multiply and Show Area
+1.	At frame 105, add another text:
+2.	12 × 12 = 144 square inches
+STEP 6: Show Height and Volume Calculations
+6A. Zoom Out Again
+1.	Go back to the Camera Layer.
+2.	At frame 115, insert Keyframe.
+3.	At frame 130, reset zoom using the Camera Tool to show the complete Pyramid again.
+6B. Show Pyramid Height
+1.	At frame 135, add new text:
+2.	Height = 12 inches
+6C. Show Volume Formula
+1.	In frame 145, new text:
+2.	144 × 12 = 1,728 cubic inches
+3.	In frame 155, new text:
+4.	1,728 ÷ 3 = 576 cubic inches
+STEP 7: Polish & Export
+7A. Add Easing (Optional)
+1.	Click on a tween span.
+2.	In the Properties panel, under Tweening, select Ease In or Ease Out.
+7B. Preview Animation
+•	Press Ctrl + Enter to test the animation.
+7C. Export
+•	File > Export > Export Video or Export > Export Animated GIF.
